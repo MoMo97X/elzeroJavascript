@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Slider by elzero</title>
+    <meta
+      name="description"
+      content="an image slider made by elzero.using html,css,js"
+    />
+    <!-- Css file-s -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font file's -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Image Slider with Thumbnails</h1>
+    <div class="slider-container">
+      <button class="prev-btn">Prev</button>
+      <div class="slider">
+        <div class="img-id">image 1</div>
+        <img class="active" src="imgs/01.jpg" alt="Image 1" />
+        <img src="imgs/02.jpg" alt="Image 2" />
+        <img src="imgs/03.jpg" alt="Image 3" />
+        <img src="imgs/04.jpg" alt="Image 4" />
+        <img src="imgs/05.jpg" alt="Image 5" />
+        <img src="imgs/06.jpg" alt="Image 6" />
+        <img src="imgs/07.jpg" alt="Image 7" />
+        <img src="imgs/08.jpg" alt="Image 8" />
+      </div>
+      <button class="next-btn">Next</button>
+    </div>
+    <div class="gallery-container"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

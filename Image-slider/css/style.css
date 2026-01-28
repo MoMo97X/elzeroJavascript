@@ -1,0 +1,168 @@
+/* 
+@layer fonts {
+  @font-face {
+    font-family: "Rb-italic";
+    src: url("/Rubik/static/Rubik-Italic.ttf") format(".ttf");
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Rb-bolditalic";
+    src: url(/Rubik/static/Rubik-BoldItalic.ttf) format(".ttf");
+    font-weight: bold;
+    font-style: italic;
+  }
+} */
+
+/* Global Rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik;
+  font-style: italic;
+  height: 120vh;
+}
+
+a {
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ############################ */
+
+h1 {
+  padding: 20px;
+  margin: 0 0 20px;
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 25%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 2.75px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 100;
+  border: 2px solid #000;
+}
+
+.slider-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.slider {
+  width: 800px;
+  height: 450px;
+  position: relative;
+  border: 2px solid #000000;
+}
+
+.slider .img-id {
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  z-index: 100;
+  background-color: #5d9395;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.slider img {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider .active {
+  opacity: 1;
+}
+
+button {
+  height: 450px;
+  width: 80px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background-color: #000;
+  transition: 0.4s ease-in-out;
+  font-weight: bold;
+  letter-spacing: 2px;
+  writing-mode: vertical-lr;
+}
+
+button.prev-btn {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+button.next-btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button:not(:disabled):hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #eee;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.gallery-container {
+  display: grid;
+  margin: auto;
+  margin-top: 10px;
+  width: 800px;
+  gap: 8px;
+}
+.gallery-container img {
+  opacity: 0.4;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-container img.active {
+  opacity: 1;
+}
