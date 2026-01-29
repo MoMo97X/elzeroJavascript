@@ -16,15 +16,16 @@
     <h1>Event Manager Application</h1>
     <div class="event__container">
       <h2>Add Event</h2>
-      <form class="event__form">
-        <input type="text" placeholder="Event Name" />
-        <input type="text" placeholder="Event Organizer" />
-        <input type="date" />
-      </form>
+      <div class="event__form">
+        <input type="text" class="event__name" placeholder="Event Name" />
+        <input type="text" class="organizer" placeholder="Event Organizer" />
+        <input type="date" class="event__date" />
+      </div>
       <button onclick="addEvenet()">Add Event</button>
     </div>
     <div class="events"></div>
+
     <!-- adding js file -->
-    <source src="js/index.js" />
+    <script src="js/index.js"></script>
   </body>
 </html>
