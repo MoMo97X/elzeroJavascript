@@ -32,7 +32,7 @@ h1 {
 .event__container {
   padding: var(--pad);
   margin: 0 auto;
-  width: 650px;
+  width: 900px;
   background-color: var(--w-color);
 }
 
@@ -68,4 +68,42 @@ h1 {
   color: var(--w-color);
   border: 1px solid #000;
   background-color: orangered;
+}
+
+.events {
+  width: 900px;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.events .event {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.events .event h3 {
+  margin: 0 0 20px;
+}
+
+.events .event p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events .event p:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.events .event button {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border: none;
+  background-color: #03a9f4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
