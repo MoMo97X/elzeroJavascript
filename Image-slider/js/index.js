@@ -24,10 +24,10 @@ function goToSlide(n) {
   // 3. add active class for the current slide image.
   slides[currentSlide].classList.add("active");
 
-  // 4. update slider controls. (tregor the function)
+  // 4. update slider controls (triggor the function).
   updateSliderControls();
 
-  // 5. update thumb nail active state
+  // 5. update thumbnail active state
   updateThumbnailActiveState(currentSlide);
 }
 
