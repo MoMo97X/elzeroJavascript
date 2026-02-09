@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: -16px 0;
+  background-color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.container {
+  width: 800px;
+  padding: 20px;
+  margin-inline: auto;
+  background-color: #fff;
+}
+
+input,
+select {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.3rem;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+input[type="number"]::placeholder {
+  color: #aaa;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.box {
+  display: none;
+  margin-top: 20px;
+  color: #000;
+  background-color: #eee;
+}

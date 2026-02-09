@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Convertor</title>
+    <meta
+      name="description"
+      content="A simple Currency convertor by osama elzero."
+    />
+    <!-- website icon logo. -->
+    <link rel="favicon" href="icons8-euro-money-32.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/currency.css" />
+    <script src="js/currency.js" defer></script>
+  </head>
+  <body>
+    <h2>Currency Convertor App.</h2>
+    <div class="container">
+      <input type="number" class="amount" placeholder="Amount" />
+      <!-- Current Currency -->
+      <select class="from">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+        <option value="LYD">LYD</option>
+        <option value="KSA">KSA</option>
+      </select>
+      <!-- Converted Currency -->
+      <select class="to">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+        <option value="LYD">LYD</option>
+        <option value="KSA">KSA</option>
+      </select>
+      <button class="btn">قم بالتحويل</button>
+
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
